@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>GMI Notes</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">  
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+      <style>
+        body, html {
+          height: 100%;
+          font-family: "Inconsolata", sans-serif;
+        }
+        .bgimg {
+          background-position: center;
+          background-color: black;
+          min-height: 69%;
+        }
+        .menu {
+          display: none;
+        }
+        input[type=text], select {
+          width: 100%;
+          padding: 30px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        .bruh
+        {
+          resize: none;
+        }
+        html>
+          
+      
+
+      </style>
+      <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+          </script>
+    </head>
+    <body>
+      <!-- Header with image -->
+      <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white" style="font-size:100px">GMI Inc</span>
+        </div>
+      </header>
+      
+      <!-- Add a background color and large text to the whole page -->
+      <div class="w3-white w3-large">
+        
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+          <div class="w3-content" style="max-width:700px">
+            <h1 style="color:darkblue;">  
+                Welcome to GMI Inc 
+            </h1>
+        <h3>Type notes to be summarized in the field below</h3>
+        <p>
+         Change the text of the text field, and 
+         then click the button below to summarize.
+        </p>
+      
+        <form method = 'post'>
+          <label for="user" Enter your notes:</label>
+          <textarea class="bruh" rows="20" cols="70" type = "text" id = "user" name="user" placeholder="Enter Note Here"> </textarea>
+          <button type="submit"> Press to Summarize </button>
+          </form>
+          <p></p>
+
+        
+        <p id="demo"></p>
+          </div>
+        </div>
+        
+        
+        
+        <!-- End page content -->
+      </div>
+
+      <!-- how to help -->
+        <div class="w3-container" id="about">
+          <div class="w3-content w3-center" style="max-width:700px;margin-bottom:50px">
+            <h5 class="w3-center w3-wide w3-padding-32"><span>
+          </div>
+        </div>
+
+     
+      <!-- Footer -->
+      <footer class="w3-center w3-black w3-padding-64 w3-large">
+        <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-green" href="https://en.wikipedia.org/wiki/Mark_Zuckerberg" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-green" href="https://en.wikipedia.org/wiki/Elon_Musk" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-green" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGbWza0UGl3Xph0uy4DFOvBwzUAz6TnY2UmkfIYQFGR95Sf19m4sOu2zRdMRCFE_C7giE:https://i.insider.com/5d8bc40d2e22af423c072962%3Fwidth%3D1136%26format%3Djpeg&usqp=CAU" title="Google +"><i class="fa fa-instagram"></i></a>
+      </footer>
+      </footer>
+      
+      <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+      </script>
+      
+  </html>
